@@ -1,0 +1,33 @@
+:root{--paper:#18181b;--ink:#efeeeb;--muted:#a3a1a5;--line:#39393f;--red:#d56878}
+body{background:#121214}
+.site-shell{background:var(--paper)}
+.sidebar{background:#111113}
+.brand{font-weight:600}
+.brand-star,.heading-star,.small-star,.footer-star{color:#bd4a5e}
+.character-link{background:#202023;border-color:#3b3439}
+.character-link img{filter:none}
+.selected-dot{background:#d56878}
+.topbar{color:#cac8cd}
+.breadcrumb span{color:#85838a}
+.character-heading{padding-top:43px;padding-bottom:34px}
+h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-4px}
+.heading-star{font-family:Arial,sans-serif;font-size:.28em;margin-top:18px;margin-left:22px}
+.name-block p{color:#efeeeb}
+.art-button{border-color:#4e4549}
+.zoom-label{background:rgba(23,23,26,.94);border-color:#555057;color:#efeeeb}
+.image-caption{color:#adabb0}
+.tablist button[aria-selected=true]{color:#f3f1ee}
+.panel-heading{color:#b3b0b6}
+.intro{color:#c4c1c7}
+.profile-list dd>span,.profile-list small{color:#aaa7ae}
+.tag-row span{color:#c6c2ca;border-color:#48434a;background:#201d22}
+.prompt-link{background:#efeeeb;color:#202024;border-color:#efeeeb}
+.prompt-link:hover{background:#c0596c;color:#fff;border-color:#c0596c}
+.prompt-box{background:#111114;border-color:#454149}
+.prompt-toolbar{background:#222025;color:#b9b5bf}
+.prompt-toolbar button{border-color:#665460;color:#e1919f}
+pre{color:#dbd7e0}
+dialog{box-shadow:0 24px 100px #000}
+dialog>button{background:#18181b;color:#efeeeb}
+dialog::backdrop{background:rgba(0,0,0,.9)}
+@media(max-width:600px){.character-heading{padding-top:29px;padding-bottom:25px}.heading-star{margin-top:14px;margin-left:15px}}
