@@ -58,13 +58,7 @@ bangs not covering right eye,
 body stitches, black sutures,
 stitched scars across collarbone,
 stitched seam across chest,
-visible black thread,
-
-open black shirt,
-shirt unbuttoned to the waist,
-loose open collar,
-bare chest,
-shirt slipping off one shoulder`}
+visible black thread`}
 ,
 {slug:'kate',number:'004',ja:'ケイト',en:'KATE',ko:'케이트',image:'kate.jpeg',palette:'CREAM & AMBER',catch:'やわらかな毛並み、琥珀の瞳。',intro:'淡いクリーム色の大きな猫耳と、豊かな尾を持つサイベリアンの青年。ふわりと崩れた金髪の隙間から、琥珀色の半眼と小さな牙が覗く。',alt:'クリーム色の大きな猫耳と金髪、琥珀色の瞳を持つケイト',search:'ケイト kate 케이트 クリーム 金 ゴールド 琥珀 アンバー サイベリアン 猫 耳 尻尾 牙 男性',profile:[['NAME','ケイト <small>/ KATE</small>'],['SPECIES','サイベリアン<br><small>キャットボーイ</small>'],['HAIR','ウォームゴールド<br><small>ふわりとしたショートレイヤー</small>'],['EYES','アンバー<br><small>半眼</small>'],['DETAILS','クリーム色の猫耳・大きな尾<br><small>小さな牙 · ゴールドピアス</small>']],tags:['SIBERIAN CAT','AMBER EYES','GOLDEN HAIR'],prompt:"1boy, solo, adult male, handsome young man, slender masculine body, fair skin, human face, 1.5: siberian cat boy:., 1.5::large fluffy cream-colored cat ears::, 1.5: huge bushy cream-colored cat tail::, 1.4: thick fluffy cream fur around shoulders::, 1.5::warm golden blond hair::, 1.5::voluminous tousled short layered hair::, 1.4:fluffy swept bangs falling over one eye::, 1.3: short wispy side hair ending near ears::, 1.3::short feathered nape::, messy fluffy crown, outward curling hair tips, amber half-lidded eyes, thin eyebrows, long eyelashes, small visible fang, playful teasing smile, delicate gold earrings"},
 {slug:'momo',number:'005',ja:'桃',en:'MOMO',ko:'모모',image:'momo.jpeg',palette:'MUTED ROSE & BLACK',catch:'くすんだ桃色、深い黒の眼差し。',intro:'くすみを帯びたローズピンクの髪を、後ろで小さく結んだ青年。静かな色気を宿す黒い瞳と、耳元に重ねた銀のピアスが柔らかな表情を引き締める。',alt:'くすみピンクの髪を小さなお団子に結び、黒い瞳と多数の銀色ピアスを持つ桃',search:'桃 モモ momo 모모 ピンク ローズ 桃色 黒目 ブラック 小さいお団子 シニヨン ピアス シルバー 男性',profile:[['NAME','桃 <small>/ MOMO</small>'],['SPECIES','HUMAN<br><small>成人男性</small>'],['HAIR','ミューテッドローズ<br><small>レイヤー · 小さなシングルバン</small>'],['EYES','ディープブラック<br><small>鋭い半眼</small>'],['DETAILS','ロングバング<br><small>複数のシルバーピアス</small>']],tags:['MUTED ROSE HAIR','BLACK EYES','SILVER PIERCINGS'],prompt:`1boy, solo, adult man, handsome mature man,
