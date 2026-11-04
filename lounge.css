@@ -8,3 +8,12 @@
 .character-grid .character-card .card-copy small,.character-grid .character-card:nth-child(9n+1) .card-copy small{font-size:10px;letter-spacing:1px;margin-top:9px}
 .character-grid .character-card .card-tags,.character-grid .character-card:nth-child(9n+1) .card-tags{left:20px;bottom:79px}
 @media(max-width:700px){.character-grid .character-card .card-copy,.character-grid .character-card:nth-child(9n+1) .card-copy{left:12px;right:12px;bottom:14px}.character-grid .character-card .card-copy p,.character-grid .character-card:nth-child(9n+1) .card-copy p{font-size:25px}.character-grid .character-card .card-copy small,.character-grid .character-card:nth-child(9n+1) .card-copy small{font-size:9px;margin-top:7px}.character-grid .character-card .card-tags,.character-grid .character-card:nth-child(9n+1) .card-tags{left:12px;bottom:68px}}
+
+/* Two clearly visible archive entrances */
+.archive-sections{display:grid!important;grid-template-columns:1fr 1fr;gap:14px!important;padding:26px 0 0!important}
+.archive-sections a{display:flex!important;justify-content:space-between;align-items:center;min-height:82px;padding:18px 24px!important;border:1px solid #57424c!important;background:#211820!important;color:#c6b7bf;transition:background .25s,border-color .25s}
+.archive-sections a:before{display:none!important}
+.archive-sections a[aria-current=page]{border-color:#ba566f!important;background:linear-gradient(110deg,#422131,#271820)!important;color:#fff2f6;box-shadow:inset 3px 0 #cf667f}
+.archive-sections a:hover{border-color:#c68095!important;background:#34222e!important}
+.section-label{display:flex;align-items:center;gap:20px}.section-label b{font:normal 31px Georgia,serif;letter-spacing:1px}.section-label>span{font:11px Arial,sans-serif;letter-spacing:1.5px}.archive-sections small{font:italic 24px Georgia,serif;color:#cc93a5}
+@media(max-width:700px){.archive-sections{gap:10px!important;padding-top:20px!important}.archive-sections a{min-height:84px;padding:13px 14px!important;align-items:center}.section-label{display:flex;flex-direction:column;align-items:start;gap:8px}.section-label b{font-size:27px}.section-label>span{font-size:9px;letter-spacing:1px}.archive-sections small{font-size:22px}}
