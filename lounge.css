@@ -37,3 +37,5 @@ body{background:#080808;color:var(--ink);font-family:Arial,'Helvetica Neue','Not
 #archive-boot{transition:none}#archive-boot.boot-exit{transition:clip-path .8s cubic-bezier(.76,0,.24,1),visibility .8s}@media(prefers-reduced-motion:reduce){#archive-boot.boot-exit{transition:none}}
 
 #archive-boot .boot-name{font-size:clamp(48px,12vw,160px);letter-spacing:-.055em}@media(max-width:700px){#archive-boot .boot-name{font-size:17vw}}
+
+.name-ticker{color:#bf8795;font-family:Georgia,'Times New Roman',serif;font-size:16px;line-height:1.5;letter-spacing:3px;padding:11px 0;border-color:#38141e}.name-ticker>div{gap:30px;animation-duration:65s}.name-ticker span:nth-child(2n){color:#dec5cb}@media(max-width:700px){.name-ticker{font-size:14px;letter-spacing:2px;padding:9px 0}}
