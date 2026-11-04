@@ -35,3 +35,5 @@ body{background:#080808;color:var(--ink);font-family:Arial,'Helvetica Neue','Not
 @media(prefers-reduced-motion:reduce){.name-ticker>div{animation:none!important}.route-wipe{display:none!important}.character-card.card-arriving,.boot-arrived .archive-heading h1,.hero-photo-change{animation:none!important}#archive-boot{transition:none}}
 
 #archive-boot{transition:none}#archive-boot.boot-exit{transition:clip-path .8s cubic-bezier(.76,0,.24,1),visibility .8s}@media(prefers-reduced-motion:reduce){#archive-boot.boot-exit{transition:none}}
+
+#archive-boot .boot-name{font-size:clamp(48px,12vw,160px);letter-spacing:-.055em}@media(max-width:700px){#archive-boot .boot-name{font-size:17vw}}
