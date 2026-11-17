@@ -10,11 +10,12 @@ addEventListener('hashchange',update);update();
 })();
 
 (()=>{
+document.querySelector('.boot-center').dataset.count=String(characters.length);
 const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const boot=document.getElementById('archive-boot'),percent=document.getElementById('boot-percent'),bar=document.getElementById('boot-bar'),status=document.getElementById('boot-status');
 let bootToken=0,finished=false;
 function closeBoot(token){if(token!==bootToken||finished)return;finished=true;boot.classList.add('boot-exit');document.body.classList.remove('boot-arrived');requestAnimationFrame(()=>document.body.classList.add('boot-arrived'));setTimeout(()=>{if(token===bootToken){boot.hidden=true;if(boot.contains(document.activeElement))document.querySelector('.wordmark').focus()}},reduced?0:850)}
-function startBoot(){const token=++bootToken;finished=false;boot.hidden=false;boot.classList.remove('boot-exit');percent.textContent='00%';bar.style.width='0%';status.textContent='PREPARING IMAGE FILES';const start=performance.now();let done=0;const tick=()=>{if(token!==bootToken)return;done++;const value=Math.round(done/characters.length*100);percent.textContent=String(value).padStart(2,'0')+'%';bar.style.width=value+'%';status.textContent=done===characters.length?'ARCHIVE READY / OC 09 · OW 10':'IMAGE FILES '+String(done).padStart(2,'0')+' / '+characters.length};
+function startBoot(){const token=++bootToken;finished=false;boot.hidden=false;boot.classList.remove('boot-exit');percent.textContent='00%';bar.style.width='0%';status.textContent='PREPARING IMAGE FILES';const start=performance.now();let done=0;const tick=()=>{if(token!==bootToken)return;done++;const value=Math.round(done/characters.length*100);percent.textContent=String(value).padStart(2,'0')+'%';bar.style.width=value+'%';status.textContent=done===characters.length?'ARCHIVE READY / OC '+String(characters.filter(c=>c.section!=='uchiyoso').length).padStart(2,'0')+' · OW '+String(characters.filter(c=>c.section==='uchiyoso').length).padStart(2,'0'):'IMAGE FILES '+String(done).padStart(2,'0')+' / '+characters.length};
 const jobs=characters.map(c=>new Promise(resolve=>{const im=new Image();im.onload=im.onerror=()=>{tick();resolve()};im.src=c.image}));
 Promise.race([Promise.all(jobs),new Promise(resolve=>setTimeout(resolve,4500))]).then(()=>{if(token!==bootToken)return;setTimeout(()=>closeBoot(token),Math.max(0,(reduced?0:2200)-(performance.now()-start)))});
 setTimeout(()=>closeBoot(token),5000);
@@ -27,3 +28,4 @@ hero.querySelector('.hero-prev').addEventListener('click',()=>{heroIndex--;showH
 const ticker=document.createElement('div');ticker.className='name-ticker';ticker.setAttribute('aria-hidden','true');const track=document.createElement('div');for(let repeat=0;repeat<2;repeat++)for(let ornament=0;ornament<4;ornament++){const name=document.createElement('span');name.textContent='˚✩∗*ﾟ⋆｡˚✩☪︎⋆｡˚✩˚✩∗*ﾟ⋆｡˚✩⋆｡˚✩';track.append(name)}ticker.append(track);document.querySelector('.filter-row').before(ticker);
 const observer=new IntersectionObserver(entries=>{for(const entry of entries)if(entry.isIntersecting){entry.target.classList.add('card-arriving');observer.unobserve(entry.target)}},{threshold:.03});function watchCards(){document.querySelectorAll('.character-card').forEach((card,index)=>{card.style.setProperty('--entry-delay',(index%4)*60+'ms');observer.observe(card)})}new MutationObserver(watchCards).observe(document.getElementById('character-grid'),{childList:true});watchCards();startBoot();
 })();
+
